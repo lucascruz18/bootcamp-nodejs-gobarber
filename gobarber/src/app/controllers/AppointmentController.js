@@ -4,7 +4,7 @@ class AppointmentController {
   async create (req, res) {
     const provider = await User.findByPk(req.params.provider)
 
-    return res.render('/appointments/create', { provider })
+    return res.render('appointments/create', { provider })
   }
 }
 
