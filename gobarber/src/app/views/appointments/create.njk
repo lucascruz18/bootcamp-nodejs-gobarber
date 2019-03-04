@@ -1,6 +1,6 @@
-{# {% extends "_layouts/auth.njk" %}
+{% extends "_layouts/default.njk" %}
 
-{% block main %}
+{% block body %}
   <div class="main-wrapper">
     <div class="content">
       <strong> Agendando horário</strong>
@@ -13,9 +13,7 @@
       <form action="/app/appointments/new/{{ provider.id }}" method="POST">
         <input type="text" class="flatpickr" placeholder="Escolha uma data">
 
-        <div id="hours">
-
-        </div>
+        <div id="hours"></div>
 
         <button type="submit">Agendar</button>
 
@@ -41,5 +39,4 @@
       }
     })
   </script>
-{% endblock %} #}
-Hello
+{% endblock %}
